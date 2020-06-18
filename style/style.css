@@ -6,13 +6,13 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 21px;
-  color: #000000;
-  background: #E5E5E5;
+  color: #363636;
+  background: #e5e5e5;
 }
 
 /* begin Header */
@@ -22,36 +22,45 @@ body {
   justify-content: space-between;
   height: 104px;
   padding-left: 34px;
-  border: 1px solid #D4D4D4;
+  border: 1px solid #d4d4d4;
 }
 
-.line {
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.header-logo:after {
+  content: "";
+  display: inline-block;
   width: 1px;
   height: 100%;
-  background-color: #D4D4D4;
-  margin: 0 34px;
+  background-color: #d4d4d4;
+  margin-left: 34px;
 }
+
 .search-input {
   padding-left: 38px;
-  background: #E5E5E5;
+  background: #e5e5e5;
   background-image: url(../image/search.svg);
   background-repeat: no-repeat;
   background-position: center left;
   border: none;
   font-size: 18px;
-  color: #A5A5A5;
-}
-
-.search-input:focus {
-  border: none;
+  color: #a5a5a5;
+  outline: none;
+  margin-left: 34px;
+  margin-right: auto;
 }
 
 .nav {
-  margin-right: 44px;
   margin-left: auto;
 }
 
 .navigation-link {
+  position: relative;
   text-decoration: none;
   font-size: 18px;
   color: #363636;
@@ -59,6 +68,22 @@ body {
 
 .navigation-link:not(:last-child) {
   margin-right: 18px;
+}
+
+.navigation-link:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  background-color: #363636;
+  transform: scaleX(0);
+  transition: transform 0.2s;
+}
+
+.navigation-link:hover:after {
+  transform: scaleX(1);
 }
 
 .button-group {
@@ -69,22 +94,173 @@ body {
 
 .button {
   font-size: 18px;
-  background: #E5E5E5;
+  background: #e5e5e5;
   border: none;
   cursor: pointer;
+  outline: none;
 }
 
 .button--sing_up {
-  color: #5671F6;
+  color: #5671f6;
   height: 100%;
   padding: 0 34px;
-  border-left: 1px solid #D4D4D4;
+  border-left: 1px solid #d4d4d4;
+  margin-left: 34px;
 }
 
 .button--login {
-  background: #5671F6;
-  border: 1px solid #5671F6;
+  background: #5671f6;
+  border: 1px solid #5671f6;
   color: #ffffff;
   height: 100%;
   padding: 0 50px;
 }
+
+/* end Header */
+
+/* begin Main */
+/* film-trailer */
+.container {
+  max-width: 1130px;
+  margin: auto;
+}
+
+.film {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-bottom: 1px solid #D4D4D4;
+}
+
+.film-wrapper {
+  display: flex;
+}
+
+.film-trailer {
+  display: flex;
+  flex-direction: column;
+  margin-right: 62px;
+}
+
+.trailer-poster {
+  border-radius: 5px 5px 0 0;
+  width: 358px;
+}
+
+.trailer-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #E5E5E5;
+  border: 1px solid #D4D4D4;
+  border-radius: 0 0 5px 5px;
+  padding: 25px 81px;
+  cursor: pointer;
+}
+
+.trailer-button-icon {
+  margin-right: 12px;
+}
+
+.button-text {
+  font-size: 16px;
+  line-height: 19px;
+  color: #5671F6;
+}
+
+/* film-text */
+.film-title {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.film-subtitle {
+  display: block;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 21px;
+  color: #A5A5A5;
+  margin-bottom: 32px;
+}
+
+.film-description {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: #000000;
+  margin-bottom: 50px;
+  max-width: 514px;
+}
+
+.about-film {
+  display: flex;
+  margin-bottom: 34px;
+}
+
+.left-side {
+  margin-right: 40px;
+}
+
+
+.about-text {
+  display: block;
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: normal;
+}
+
+.about-text-bold {
+  display: inline-block;
+  width: 100px;
+  font-weight: bold;
+  margin-right: 10px;
+  vertical-align: top;
+}
+
+/* film-rating */
+.film-rating {
+  display: flex;
+}
+
+.rating-counter {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #5671F6;
+  border: 1px solid #5671F6;
+  border-radius: 10px;
+  padding: 33px 23px;
+  margin-right: 28px;
+}
+
+.rating-description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.rating-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  margin-top: 11px;
+  margin-bottom: 12px;
+}
+
+.rating-text {
+  display: block;
+  margin-bottom: 7px;
+}
+.rating-text-bold {
+  font-weight: bold;
+}
+
+/*  */
