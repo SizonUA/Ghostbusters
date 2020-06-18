@@ -259,8 +259,75 @@ body {
   display: block;
   margin-bottom: 7px;
 }
+
 .rating-text-bold {
   font-weight: bold;
 }
 
-/*  */
+/* cast */
+.cast {
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+}
+
+.section-title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #A5A5A5;
+  margin-right: 30px;
+  margin-bottom: 60px;
+  cursor: pointer;
+}
+
+.section-title--active {
+  font-weight: 900;
+  color: #363636;
+}
+
+.tabs-content {
+  display: flex;
+  align-items: center;
+flex-wrap: wrap;}
+
+.card {
+  display: flex;
+  align-items: center;
+  flex-basis: 25%;
+  margin-bottom: 35px;
+}
+
+.card-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.card-text {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.card-title {
+  font-weight: bold;
+  color: #5671F6;
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+.role {
+  font-weight: normal;
+  color: #A5A5A5;
+}
