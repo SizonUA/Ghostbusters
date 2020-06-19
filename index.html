@@ -13,14 +13,14 @@
 <body>
   <header class="header">
     <a href="./index.html" class="header-logo">
-      <img class="logo" src="image/logo.png" alt="Logo"></img>
+      <img class="logo" src="image/logo_x2.png" alt="Logo"></img>
     </a>
     <input type="text" class="search-input" placeholder="Поиск по фильмам...">
     <nav class="navigation">
       <a href="#" class="navigation-link">Фильмы</a>
       <a href="#" class="navigation-link">ТВ</a>
       <a href="#" class="navigation-link">Новости</a>
-      <a href="#" class="navigation-link">О сервисе</a>
+      <a href="#" class="navigation-link">О&nbsp;сервисе</a>
     </nav>
     <!-- /.navigation -->
     <div class="button-group">
@@ -32,6 +32,17 @@
       </button>
     </div>
     <!-- /.button-group -->
+    <div class="mobile-buttons">
+      <button class="mobile-button--search">
+        <img src="image/search.svg" alt="Search" class="mobile-search-icon">
+      </button>
+      <button class="mobile-button--menu">
+        <span class="mobile-menu-line"></span>
+        <span class="mobile-menu-line"></span>
+        <span class="mobile-menu-line"></span>
+      </button>
+    </div>
+    <!-- /.mobile-buttons -->
   </header>
 
   <main class="film">
@@ -65,17 +76,13 @@
                 <span class="about-text-regular">Дэн Эйкройд</span>
               </span>
 
-              <span class="about-text">
-                <strong class="about-text-bold">Премьера</strong>
-                <span class="about-text-regular">09.07.2020 (РФ)</span>
-              </span>
             </div>
             <!-- /.left-side -->
 
             <div class="right-side">
               <span class="about-text">
                 <strong class="about-text-bold">Бюджет</strong>
-                <span class="about-text-regular">1 000 000 $</span>
+                <span class="about-text-regular">1&nbsp;000&nbsp;000&nbsp;$</span>
               </span>
 
               <span class="about-text">
@@ -83,10 +90,6 @@
                 <span class="about-text-regular">SPPR</span>
               </span>
 
-              <span class="about-text">
-                <strong class="about-text-bold">Премьера</strong>
-                <span class="about-text-regular">09.07.2020 (РФ)</span>
-              </span>
             </div>
             <!-- /.right-side -->
           </div>
@@ -233,6 +236,43 @@
     <!-- /.container -->
   </section>
   <!-- /.cast -->
+
+  <section class="news">
+    <div class="container">
+      <h2 class="section-title section-news-title section-title--active">Новости по теме</h2>
+      <div class="news-cards">
+
+        <div class="news-card">
+          <span class="news-date">31 марта 2020</span>
+          <h3 class="news-title">«Морбиуса» и «Охотников за привидениями» перенесли на следующий год</h3>
+        </div>
+        <!-- /.news-card -->
+
+        <div class="news-card">
+          <span class="news-date">9 декабря 2019</span>
+          <h3 class="news-title">Наследники: Вышел дебютный трейлер новых «Охотников за привидениями»</h3>
+        </div>
+        <!-- /.news-card -->
+
+        <div class="news-card">
+          <span class="news-date">11 ноября 2019</span>
+          <h3 class="news-title">Новые «Охотники за привидениями» обзавелись названием</h3>
+        </div>
+        <!-- /.news-card -->
+
+        <div class="news-card">
+          <span class="news-date">19 октября 2019</span>
+          <h3 class="news-title">Завершились съёмки новых «Охотников за привидениями»</h3>
+        </div>
+        <!-- /.news-card -->
+
+      </div>
+      <!-- /.news-cards -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.news -->
+
 
 </body>
 
