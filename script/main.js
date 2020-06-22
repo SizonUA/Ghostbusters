@@ -38,24 +38,20 @@ var mySwiper = new Swiper(".swiper-container", {
   loop: true,
   slidesPerView: 1,
   spaceBetween: 25,
+  autoplay: {
+    delay: 5000,
+  },
   breakpoints: {
     576: {
       slidesPerView: 1,
     },
-    // when window width is >= 480px
     768: {
       slidesPerView: 2,
       spaceBetween: 20,
     },
-    // when window width is >= 640px
     992: {
       slidesPerView: 3,
       spaceBetween: 30,
     },
-  },
-
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
   },
 });

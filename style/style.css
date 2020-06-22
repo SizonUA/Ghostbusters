@@ -51,12 +51,8 @@ body {
   flex-grow: 1;
 }
 
-.mobile-menu--active {
-  display: flex;
-}
-
 .search-input {
-  width: 350px;
+  width: 300px;
   padding-left: 38px;
   background: #e5e5e5;
   background-image: url(../image/search.svg);
@@ -66,7 +62,7 @@ body {
   font-size: 18px;
   color: #a5a5a5;
   outline: none;
-  margin-left: 34px;
+  margin-left: 24px;
   margin-right: auto;
 }
 
@@ -124,7 +120,7 @@ body {
   color: #5671f6;
   padding: 0 34px;
   border-left: 1px solid #d4d4d4;
-  margin-left: 34px;
+  margin-left: 24px;
 }
 
 .button--login {
@@ -406,12 +402,14 @@ body {
 }
 
 .news-card {
+  height: 150px;
   flex-basis: 23%;
   background-color: #ffffff;
   border-radius: 5px;
   border-radius: 5px;
   padding: 30px;
   margin-bottom: 100px;
+  overflow: auto;
 }
 
 .news-date {
@@ -436,6 +434,7 @@ body {
   }
 
   .search-input {
+    width: 250px;
     font-size: 14px;
     padding-left: 28px;
   }
@@ -450,6 +449,7 @@ body {
 
   .button--sing_up {
     padding: 0 24px;
+    /* margin-left: 14px; */
   }
 
   .button--login {
@@ -542,6 +542,8 @@ body {
     }
 
     .header {
+      position: fixed;
+      
       height: 80px;
       padding-left: 20px;
     }
@@ -551,6 +553,7 @@ body {
     }
 
     .mobile-menu {
+      display: flex;
       height: calc(100% - 80px);
       flex-direction: column;
       align-items: center;
